@@ -1,120 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhananjay Sonar | Java Full Stack Developer</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhananjay Sonar | Java Full Stack Developer</title>
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- ===== NAVBAR ===== -->
-<nav class="navbar">
-  <h2 class="logo">Dhananjay Sonar</h2>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <button id="themeToggle">🌙</button>
+<header class="header">
+  <nav class="navbar container">
+    <h2 class="logo">Dhananjay Sonar</h2>
 
-  </ul>
-</nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Dark Mode Toggle -->
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+  </nav>
+</header>
+
 
 <!-- ===== HERO SECTION ===== -->
-<section id="home" class="hero">
-  <div class="hero-content">
+<section id="home" class="hero section">
+  <div class="hero-content container">
+
     <h1>Hi, I'm <span>Dhananjay Sonar</span></h1>
-    <h3>Java Full Stack Developer</h3>
-    <p>I build scalable backend systems and responsive web applications.</p>
+
+    <!-- Typing Effect Target -->
+    <h3 class="typing-text">
+      <span id="typing"></span>
+    </h3>
+
+    <p class="hero-description">
+      Aspiring Java Full Stack Developer with strong knowledge of 
+      Java, Data Structures & Algorithms, and SQL. 
+      Passionate about building scalable backend systems and responsive web applications.
+    </p>
+
     <div class="hero-buttons">
-      <a href="./Resume.pdf" target="_blank" class="btn primary">View Resume</a>
-      <a href="#contact" class="btn secondary">Hire Me</a>
+      <a href="./resume.pdf" target="_blank" class="btn primary">View Resume</a>
+      <a href="./resume.pdf" download class="btn secondary">Download Resume</a>
     </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/your-link" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/your-username" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
   </div>
 </section>
+
 
 <!-- ===== ABOUT ===== -->
-<section id="about" class="section reveal">
-  <h2>About Me</h2>
-  <p>
-    I'm a passionate Java Full Stack Developer focused on building efficient 
-    backend systems using Java, Spring Boot, and modern frontend technologies.
-    Currently improving my DSA and system design skills.
-  </p>
+<section id="about" class="section alt-bg">
+  <div class="container">
+    <h2>About Me</h2>
+
+    <p>
+      I am a hardworking and dedicated Java Full Stack Developer focused on 
+      writing clean, optimized, and scalable code.
+    </p>
+
+    <p>
+      With strong foundation in DSA and SQL, I enjoy solving logical problems 
+      and continuously improving my backend and system design skills.
+    </p>
+  </div>
 </section>
+
 
 <!-- ===== SKILLS ===== -->
-<section id="skills" class="section reveal">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div>C</div>
-    <div>C++</div>
-    <div>Java</div>
-    <div>Spring Boot</div>
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>JavaScript</div>
-    <div>MySQL</div>
-    <div>Git & GitHub</div>
-    <div>REST APIs</div>
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Spring Boot</div>
+      <div class="skill-card">Data Structures & Algorithms</div>
+      <div class="skill-card">SQL / MySQL</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">REST APIs</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">OOP Concepts</div>
+    </div>
   </div>
 </section>
+
 
 <!-- ===== PROJECTS ===== -->
-<section id="projects" class="section reveal">
-  <h2>Projects</h2>
+<section id="projects" class="section alt-bg">
+  <div class="container">
+    <h2>Projects</h2>
 
-  <div class="project-cards">
+    <div class="project-grid">
 
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>Responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
-      <a href="#" class="project-link">View Project</a>
+      <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          Fully responsive portfolio built using HTML, CSS, and JavaScript.
+          Integrated contact form and deployed using GitHub Pages.
+        </p>
+        <div class="project-links">
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Java DSA Repository</h3>
+        <p>
+          Collection of optimized DSA problems focusing on time complexity,
+          recursion, dynamic programming, and logical thinking.
+        </p>
+        <div class="project-links">
+          <a href="#" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Mini Full Stack Applications</h3>
+        <p>
+          Developed backend services using Java, Spring Boot, REST APIs,
+          and MySQL integration.
+        </p>
+        <div class="project-links">
+          <a href="#" target="_blank">View Project</a>
+        </div>
+      </div>
+
     </div>
-
-    <div class="project-card">
-      <h3>Java DSA Practice</h3>
-      <p>Collection of optimized data structure & algorithm solutions in Java.</p>
-      <a href="#" class="project-link">GitHub Repo</a>
-    </div>
-
-    <div class="project-card">
-      <h3>Mini Web Apps</h3>
-      <p>Small web applications demonstrating frontend and backend integration.</p>
-      <a href="#" class="project-link">View Project</a>
-    </div>
-
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="section reveal">
-  <h2>Contact Me</h2>
 
-  <form action="https://formspree.io/f/xwvnykpe" method="POST" class="contact-form">
-    
-    <input type="hidden" name="_subject" value="New Portfolio Contact!">
-    
-    <input type="text" name="name" placeholder="Your Name" required>
-    
-    <input type="email" name="email" placeholder="Your Email" required>
-    
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    
-    <button type="submit" class="btn primary">Send Message</button>
-  </form>
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Me</h2>
+
+    <p class="contact-text">
+      I am open to internship and entry-level opportunities in Java Full Stack Development.
+      Feel free to connect with me.
+    </p>
+
+    <form action="https://formspree.io/f/xwvnykpe" method="POST" class="contact-form">
+
+      <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit" class="btn primary">Send Message</button>
+
+    </form>
+  </div>
 </section>
 
+
 <!-- ===== FOOTER ===== -->
-<footer>
-  <p>© 2026 Dhananjay Sonar | All Rights Reserved</p>
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Dhananjay Sonar | Java Full Stack Developer</p>
+  </div>
 </footer>
 
-<script src="script.js"></script>
+
+
+<!-- ===== TYPING EFFECT SCRIPT ===== -->
+<script>
+const textArray = [
+  "Aspiring Java Full Stack Developer",
+  "Strong in DSA & SQL",
+  "Backend & Problem Solving Enthusiast"
+];
+
+let typingIndex = 0;
+let charIndex = 0;
+const typingElement = document.getElementById("typing");
+
+function typeEffect() {
+  if (charIndex < textArray[typingIndex].length) {
+    typingElement.textContent += textArray[typingIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeEffect, 80);
+  } else {
+    setTimeout(eraseEffect, 1500);
+  }
+}
+
+function eraseEffect() {
+  if (charIndex > 0) {
+    typingElement.textContent = textArray[typingIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseEffect, 50);
+  } else {
+    typingIndex = (typingIndex + 1) % textArray.length;
+    setTimeout(typeEffect, 300);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  typeEffect();
+});
+
+
+/* DARK MODE TOGGLE */
+const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+</script>
 
 </body>
 </html>
